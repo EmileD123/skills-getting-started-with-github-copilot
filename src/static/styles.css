@@ -98,11 +98,30 @@ body.dark-mode .activity-card {
   padding-left: 20px;
   list-style-type: disc;
   color: #555;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+body.dark-mode .activity-card ul {
+  border-top: 1px solid #444;
+  color: #bbb;
 }
 
 .activity-card ul li {
   margin-bottom: 5px;
   font-size: 14px;
+  line-height: 1.4;
+}
+
+.activity-card ul li::before {
+  content: "👤 ";
+  color: #0066cc;
+}
+
+body.dark-mode .activity-card ul li::before {
+  color: #80d8ff;
 }
 
 .form-group {
